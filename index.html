@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tsundere Studio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Work+Sans:ital@0;1&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/46cd34d4b5.js" crossorigin="anonymous"></script>
+
+    <meta name="description" content="I-It's not like we want you to play our games or anything!">
+    <meta name="keywords" content="Put some comma seperated keywords here!">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="YOURWEBSITE.COM">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tsundere Studio">
+    <meta property="og:description" content="I-It's not like we want you to play our games or anything!">
+    <meta property="og:image" content="og_image.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="paperstarstudios.moe">
+    <meta property="twitter:url" content="https://twitter.com/StudioTsundere">
+    <meta name="twitter:title" content="Tsundere Studio">
+    <meta name="twitter:description" content="I-It's not like we want you to play our games or anything!">
+    <meta name="twitter:image" content="og_image.png">
+
+
+    <style type="text/css">
+        @font-face {
+            font-family: 'SS Pretzel', Cursive;
+            src: url('fonts/SS_Pretzel.otf') format("otf");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'SS Pretzel', sans-serif;
+            background-color: #faf3df;
+            background-repeat: repeat;
+            color: #111;
+            background-attachment: fixed;
+            background-image: url('bg.png');
+        }
+
+        .promo {
+            display: block;
+            width: 700px;
+            max-width: 90%;
+            margin: auto;
+
+        }
+
+        .promo img {
+            margin-top: 30px;
+            max-width: 100%;
+        }
+
+        .summary {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .summary img {
+            width: 100%;
+        }
+        .summary img:first-child {
+            margin-bottom:30px;
+        }
+
+        .summary a {
+            display: inline;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            width: 600px;
+            max-width: 90%;
+            margin: auto;
+            padding: 45px;
+        }
+
+        .container img {
+            max-width: 100%;
+        }
+
+        .container a:link,
+        .container a:visited {
+            color: #111;
+        }
+
+        .container a:hover {
+            color: #f4a5ab;
+        }
+
+        .about {
+            margin-top: 30px;
+        }
+
+        .about p {
+            margin: 10px 0;
+        }
+
+        .about a {
+            font-weight: bold;
+        }
+
+        .logo img {
+            width: 80%;
+            display: block;
+            margin: auto;
+        }
+
+        .floating-container {
+            margin: auto;
+            background-color: #FFF;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            padding: 20px;
+        }
+
+        .social {
+            width: 40%;
+            margin: 10px auto 30px auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        h2 {
+            text-align: center;
+            display: block;
+            font-family: 'Poppins';
+            font-weight: normal;
+        }
+
+        .social a:link,
+        .social a:visited {
+            font-size: 32px;
+            background-color:#fff;
+            display: inline-block;
+            color: #FB4C6E;
+            border-radius: 50%;
+            width: 65px;
+            height: 63px;
+            line-height: 65px;
+            text-align:center;
+        }
+
+        .social a:hover {
+            color:#FB4C6E;
+            background-color: #FEDAAF;
+            background-image: url('newsletterbg.png');
+            background-size: 25px 25px;
+        }
+
+        .newsletter {
+            margin: auto;
+            background-color: #FEDAAF;
+            background-image: url('newsletterbg.png');
+            background-size: 25px 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 7px 7px rgba(0, 0, 0, 0.5);
+        }
+
+        .newsletter #revue-embed {
+            text-align: center;
+            width: 50%;
+            padding: 10px;
+            margin: auto;
+        }
+
+        .newsletter #revue-embed label {
+            display: block;
+            font-size: 24px;
+            line-height:26px;
+            font-family: 'Poppins';
+        }
+        .revue-form-group span {
+            display:block;
+        }
+
+        .newsletter #revue-embed .revue-form-field {
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 15px;
+            border: 0;
+            margin: 10px 0;
+            font-size: 15px;
+        }
+
+        .newsletter #revue-embed .revue-form-actions input {
+            padding: 5px 20px;
+            border-radius: 15px;
+            border: 2px solid transparent;
+            background-color: #FB4C6E;
+            text-transform: lowercase;
+            font-family: 'Poppins';
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .newsletter #revue-embed .revue-form-actions input:hover {
+            border: 2px solid #FB4C6E;
+            background-color: #FEB7CB;
+            color: #111;
+        }
+
+        .newsletter #revue-embed .revue-form-footer {
+            font-size: 13px;
+
+        }
+
+
+
+        .footer {
+            font-size: 13px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .button {
+            border: 3px solid #000;
+            width: 276px;
+            border-radius: 50px;
+            height: 95px;
+            background-color: #fff;
+            overflow: hidden;
+            box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .button img {
+            background-color: #fff;
+        }
+
+        .button:hover {
+            box-shadow: none;
+        }
+        
+
+        @media screen and (max-width:685px) {
+
+            .container,
+            .promo {
+                max-width: 95%;
+                padding: 0;
+            }
+            .logo img {
+                width:100%;
+            }
+
+            .newsletter #revue-embed,
+            .social {
+                width: 95%;
+            }
+            .summary {
+    flex-direction: column;
+    align-items:center;
+}  
+        }
+    </style>
+</head>
+
+<body>
+    <div class="promo">
+        <p><a href="https://www.kickstarter.com/projects/studiotsundere/i-just-want-to-be-single" target="_blank"><img src="ijwtbs_promo.png"
+                    alt="I Just Want to be Single! is coming to Kickstarter!" /></a></p>
+    </div>
+    <div class="container">
+        <div class="summary">
+            <img src="ijwtbs_summary.png"
+                alt="The anti-dating sim where you don't want to date! Play as a socially awkward female protagonist! Escape cute waifus and navigate your way out of romantic conversations to befriend them instead!" />
+            <a href="https://store.steampowered.com/app/1703610/I_Just_Want_to_be_Single/" class="button" target="_blank"><img src="steambutton.png" alt="Wishlist on Steam!" /></a>
+            <a href="https://www.kickstarter.com/projects/studiotsundere/i-just-want-to-be-single" class="button" target="_blank"><img src="kickstarterbutton.png"
+                    alt="Support us on Kickstarter!" /></a>
+        </div>
+        <div class="newsletter">
+            <div id="revue-embed">
+                <form action="https://www.getrevue.co/profile/tsunderestudio/add_subscriber" method="post" id="revue-form"
+                    name="revue-form" target="_blank">
+                    <div class="revue-form-group">
+                        <label for="member_email">Sign-up for all <span>Tsundere Studio news!</span></label>
+                        <input class="revue-form-field" placeholder="Enter your email..." type="email"
+                            name="member[email]" id="member_email">
+                    </div>
+
+                    <div class="revue-form-actions">
+                        <input type="submit" value="Subscribe!" name="member[subscribe]" id="member_submit">
+                    </div>
+                    <div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank"
+                            href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank"
+                            href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div>
+                </form>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="tsundere_studio2.png" alt="Brought to you by Tsundere Studio. Follow Us at the links below!" />
+        </div>
+        <div class="social">
+
+            <a target="_blank" href="https://tsun-angelique.itch.io/"><i class="fab fa-itch-io"></i></a> <a
+                href="https://twitter.com/StudioTsundere" target="_blank"><i class="fab fa-twitter"></i></a>
+
+            <a href="https://discord.gg/zZe4QPaRg8" target="_blank"><i class="fab fa-discord"></i></a>
+        </div>
+
+
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+
+</html>
